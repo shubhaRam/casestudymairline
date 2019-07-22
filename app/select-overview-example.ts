@@ -1,27 +1,34 @@
 import {Component} from '@angular/core';
 
-export interface Food {
+export interface City {
   value: string;
   viewValue: string;
 }
 
-/**
- * @title Basic select
- */
+export interface Destination{
+  value : string;
+  viewValue :string ;
+}
+
 @Component({
   selector: 'select-overview-example',
   templateUrl: 'select-overview-example.html',
   styleUrls: ['select-overview-example.css'],
 })
 export class SelectOverviewExample {
-  foods: Food[] = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
+  cities: City[] = [
+    {value: 'ban-0', viewValue: 'Bangalore'},
+    {value: 'chen-1', viewValue: 'Chennai'},
+    {value: 'delhi-2', viewValue: 'Delhi'},
+    {value: 'bom-3', viewValue: 'Bombay'}
+
+  ];
+  dest :  Destination[] = [
+    {value: 'ban-0', viewValue: 'Bangalore'},
+    {value: 'chen-1', viewValue: 'Chennai'},
+    {value: 'delhi-2', viewValue: 'Delhi'},
+    {value: 'bom-3', viewValue: 'Bombay'}
   ];
 }
 
 
-/**  Copyright 2019 Google Inc. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license */
